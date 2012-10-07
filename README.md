@@ -32,6 +32,11 @@ $ git fetch upstream
 $ git merge upstream/master
 
 Makes code changes
-$ vim appengine-code/filename
-$ git add appengine-code/filename
+$ vim filename
+$ git add filename
+$ git status
 $ git commit -m 'changed backround color of home page'
+$ git status
+$ git push origin master
+Username : cooking4mula@gmail.com
+Password : you know what
