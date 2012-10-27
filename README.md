@@ -2,7 +2,16 @@
 --------------
 One time setup
 --------------
-(Download and install http://git-scm.com/download)
+Download and install http://git-scm.com/download
+Download and install python - http://www.python.org/download/
+Download and extract Google appengine sdk - https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go
+
+On Windows set path env variable for git(Git\bin), python(C:\Python2.7\) and google_appengine (path where it is extracted)
+On linux you can do following, otherwise you will have to give complete path
+$ vim ~/.bashrc
+and add the following line at the end of the file.
+export PATH=/path/to/google_appengine:${PATH}
+
 $ cd my favorite directory
 $ mkdir cooking4mula
 $ cd cooking4mula
@@ -16,14 +25,6 @@ $ git config --global credential.helper 'cache --timeout=604800'
 $ git clone https://github.com/cooking4mula/appengine-code.git
 $ cd appengine-code
 $ git remote add upstream https://github.com/cooking4mula/appengine-code.git
-
-Download and install python - http://www.python.org/download/
-Download and extract Google appengine sdk - https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Go
-
-On linux you can do following, otherwise you will have to give complete path
-$ vim ~/.bashrc
-and add the following line at the end of the file.
-export PATH=/path/to/google_appengine:${PATH}
 
 ----------------------------------------
 Every time just before you start to code
@@ -47,9 +48,8 @@ Testing your code
 $ cd cooking4mula/appengine-code
 $ dev_appserver.py .
 Now goto http://localhost:8080/
-
 Hint: The server will automatically look for changes you do to files and run
-      the latest code, no need restart server.
+      the latest code, no need to restart server.
 
 ---------------------------------
 Deploying your code to production
