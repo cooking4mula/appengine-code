@@ -1,3 +1,4 @@
+<pre>
 --------------
 One time setup
 --------------
@@ -72,3 +73,4 @@ Goto https://github.com/cooking4mula/appengine-code and check that your code has
 --------------------------------------------------------------------------------
 Want to learn more git commands? - See http://gitref.org
 What's git? it's a source control like perforce.
+</pre>
