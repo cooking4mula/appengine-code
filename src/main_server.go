@@ -12,6 +12,7 @@ func init() {
 
 func homepageHandler(writer http.ResponseWriter,
                      reader *http.Request) {
+  writer.Header().Set("Content-Type", "text/html")
   err := homepageTemplate.Execute(writer, nil)
 
   if err != nil {
