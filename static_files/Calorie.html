@@ -1,0 +1,13 @@
+<script type="text/javascript">
+var fh=fopen('static_files/list.doc',0);
+if(fh!=-1){
+	length=flength(fh);
+	str=fread(fh,length);
+	fclose(fh);
+console.log(str);
+</script>
+
+<li class="nav-header">By Calorie</li>
+<li class="active"><a href="#">Low Calorie</a></li>
+<li><a href="#">Regular</a></li>
+<li><a href="#">Indulge in Sin</a></li>

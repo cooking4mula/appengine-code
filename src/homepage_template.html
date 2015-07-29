@@ -5,123 +5,93 @@
     <title>Cooking 4mula - Recipes for tasty, healthy, artistic food.</title>
     <meta name="description" content="Recipes for tasty, healthy, artistic food.">
     <meta name="keywords" content="recipes, healthy food, tasty food, elegant food">
-
-    <link href="static_files/bootstrap.min.css" rel="stylesheet">
-    <link href="static_files/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./static_files/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./static_files/bootstrap-responsive.min.css" type="text/css" rel="stylesheet">
+    <link href="./static_files/mycss.css" type="text/css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
+<script>
+</script>
+</head>
+<body>
+<div class="container" style="position:relative">
+   <div class="smallc">
+   <a href="/" title="Cooking 4mula">
+	   <img src="static_files/cooking4mula.jpg" alt="Cooking 4mula" id="cf_theme">
+   </a>
+   <div class="menuBar">
+      <div class="nav" id="primary_nav_wrap"> 
+      <br>
+         <ul>
+             <li id="btype"><a>By Type</a>
+	        <ul>
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,0);" href="#">Starters</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,1);" href="#">Soups</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,2);" href="#">Salads</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,3);" href="#">Rice</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,4);" href="#">Noodles</a></li>
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,5);" href="#">Pasta</a></li>
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,6);" href="#">Desserts</a></li>	   
+		</ul>
+	     </li>
+             <li id="cal"><a>By Calorie</a>
+		<ul>
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,0);" href="#">Healthy</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,1);" href="#">Regular</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,2);" href="#">Indulge in Sin</a></li>	   
+		</ul>
+              </li>
+              <li id="btime"><a>By Time</a>
+		<ul>
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,0);" href="#">Feed Me Already!</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,1);" href="#">Can wait a bit</a></li>	   
+		   <li><a onclick="loadPanel(((this.parentNode).parentNode).parentNode,2);" href="#">Take your time</a></li>	   
+            </ul> 
+            </li>
+       </div>
+    </div>
+   </div> <!-- </small cont> -->
 
-  <body>
-    <header class="jumbotron subhead">
-      <div class="container">
-	    <a href="/" title="Cooking 4mula">
-		   <img src="static_files/cooking4mula.jpg" alt="Cooking 4mula">
-	    </a>
-        <div class="hero-unit">
+
+<div class="container2">
+   <div class="span3">
+        <div class="well sidebar-nav">
+   	     <ul class="nav nav-list" id="pan">
+             </ul>
+        </div><!--/.well -->
+   </div><!--/span-->
+   <td>
+      <div class="hero-unit">
           <div id="myCarousel" class="carousel slide">
-            <div class="carousel-inner">
-	      <div class="item">
-                <img src="static_files/gobi-munchurian.jpg" alt="">
-	        <div class="carousel-caption">
-		  <h4>Dum Aloooo!</h4>
-		  <p style="color:red">When you want to sin.</p>
-                </div>
-              </div>
-              <div class="item active">
-                <img src="static_files/devilish-mushroom.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4>Jal Jeera</h4>
-                  <p style="color:green">When your stomach is upset :(.</p>
-                </div>
+            <div id="carousel-inner-id" class="carousel-inner">
               </div>
             </div>
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+ <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
           </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="container">
-      <div class="row">
-        <div class="span3 bs-docs-sidebar">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">By Calorie</li>
-              <li class="active"><a href="#">Low Calorie</a></li>
-              <li><a href="#">Regular</a></li>
-              <li><a href="#">Indulge in Sin</a></li>
-              <li class="nav-header">By Type</li>
-              <li><a href="#">Starters</a></li>
-              <li><a href="#">Salads and Soup</a></li>
-              <li><a href="#">Dessert</a></li>
-              <li class="nav-header">By Time</li>
-              <li><a href="#">Feed me alredy!</a></li>
-              <li><a href="#">What to eat tonite?</a></li>
-              <li><a href="#">What to eat this weekend?</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <div class="row">
-            <div class="span4">
-              <h2>Dum Alooo!</h2>
-              <p>Aloo is tasty. Aloo is tasty. Aloo is tasty </p>
-              <p><a class="btn btn-danger" href="#">I want to sin&raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Jal Jeera</h2>
-              <p>Tasty jal jeera. Tasty jal jeera. Tasy jal jeera </p>
-              <p><a class="btn btn-success" href="#">Heal my stomach&raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row">
-            <div class="span4">
-              <h2>Red Pulao!</h2>
-              <p>Aloo is tasty. Aloo is tasty. Aloo is tasty </p>
-              <p><a class="btn btn-warning" href="#">Just this once&raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Indian Pasta</h2>
-              <p>Tasty jal jeera. Tasty jal jeera. Tasy jal jeera </p>
-              <p><a class="btn btn-info" href="#">Heal my stomach&raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
-
-      <hr>
-
+       </div>
+    </td>
       <footer class="footer">
-        <div class="container">
+        <div class="container" id="change">
         <p class="pull-right">
           <a href="#">Back to top</a>
         </p>
         </div>
         <p>Contact us: <a href="mailto:cooking4mula@gmail.com">cooking4mula@gmail.com</a></p>
-      </footer> 
-    </div> <!-- /container -->
+      </footer>
+</div> 
+<!-- /container2 --> 
+</div>
 
     <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    ================================================== 
+    Placed at the end of the document so the pages load faster -->
     <script src="static_files/bootstrap.min.js"></script>
     <script src="static_files/jquery.js"></script>
-    <script src="static_files/bootstrap-transition.js"></script>
-    <script src="static_files/bootstrap-alert.js"></script>
-    <script src="static_files/bootstrap-modal.js"></script>
-    <script src="static_files/bootstrap-dropdown.js"></script>
-    <script src="static_files/bootstrap-scrollspy.js"></script>
-    <script src="static_files/bootstrap-tab.js"></script>
-    <script src="static_files/bootstrap-tooltip.js"></script>
-    <script src="static_files/bootstrap-popover.js"></script>
-    <script src="static_files/bootstrap-button.js"></script>
-    <script src="static_files/bootstrap-collapse.js"></script>
     <script src="static_files/bootstrap-carousel.js"></script>
-    <script src="static_files/bootstrap-typeahead.js"></script>
+    <script src="static_files/panel.js"></script>
   </body>
 </html>
